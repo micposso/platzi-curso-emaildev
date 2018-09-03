@@ -1,43 +1,13 @@
-<!-- Begin non-Outlook, Bulletproof button set to a minimum width of 300px -->
-<!--[if !mso]><!-->
-<table width="100%" border="0" cellspacing="0" cellpadding="0" align="left">
-    <tbody>
-        <tr>
-            <td>
-                <table class="responsive-btn" border="0" cellspacing="0" cellpadding="0" style="min-width: 300px; min-height: 52px;"
-                    align="left">
-                    <tbody>
-                        <tr>
-                            <td align="center" style="border-radius: 3px; min-width: 300px;" bgcolor="#800000">
-                                <a href="#" style="font-size: 16px; font-family: Arial, Helvetica, sans-serif; color: #ffffff; text-decoration: none;border-radius: 3px; padding: 12px 18px; border: 1px solid #800000; display: inline-block; text-transform:uppercase; background-color: #800000;">My
-                                    Button Text</a>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </td>
-        </tr>
-    </tbody>
-</table>
-<!--<![endif]-->
-<!-- End non-Outlook button -->
-<!-- Begin Outlook button -->
-<!--[if mso]>
-    <table width="100%" border="0" cellspacing="0" cellpadding="0" align="left"> 
-        <tbody> 
-        <tr> 
-        <td> 
-        <table height="52" border="0" cellspacing="0" cellpadding="0" align="left"> 
-        <tbody> 
-        <tr>
-        <td height="52" align="center" valign="middle" bgcolor="#800000"> 
-        &nbsp;&nbsp;&nbsp;&nbsp;<a href="#" style="font-size: 16px; font-family: Arial, Helvetica, sans-serif; color: #ffffff; text-decoration: none; text-transform:uppercase; background-color: #800000;">My Button Text</a>&nbsp;&nbsp;&nbsp;&nbsp;</td>
-        </tr> 
-        </tbody> 
-        </table>
-        </td> 
-        </tr> 
-        </tbody> 
-    </table>
-    <!--<![endif]-->
-<!-- End Outlook button -->
+<!-- CSS border no funciona en outlook, se usa codigo VML -->
+<!-- algunas ESP pueden quitar el codido VML -->
+<!-- codigo VML require declarar el ancho y largo -->
+<!-- generador de VML  buttons.cm -->
+<div>
+	<!--[if mso]>
+	  <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="{link}" style="height:{height}px;v-text-anchor:middle;width:{width}px;" arcsize="{arcsize}%" strokecolor="#{strokecolor}" fillcolor="{fillcolor}">
+	    <w:anchorlock/>
+	    <center style="color:#{color};font-family:{font};font-size:{font-size}px;">{button text}</center>
+	  </v:roundrect>
+	<![endif]-->
+	<a href="{link}" style="background-color:#{bgcolor};border:{border};border-radius:{border-radius};color:#{color};display:{display};font-family:{font};font-size:{font-size}px;line-height:{line-height}px;text-align:{align};text-decoration:{decoration};width:{width}px;-webkit-text-size-adjust:none;mso-hide:all;">{button text}</a>
+</div>
