@@ -1,0 +1,27 @@
+/* remover links azules in iOS */
+.appleLinksBlack a { text-decoration:none !important; }
+.appleLinksBlack a { color:#000000 !important; }
+
+/* remover links azules in gmail */
+/* anadir id="body" al elemento body */
+
+u + #body a {
+    color: inherit;
+    text-decoration: none;
+    font-size: inherit;
+    font-family: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+}
+
+/* remover links azules in samsung */
+/* anadir id="MessageViewBody" al elemento a del link */
+
+#MessageViewBody a {
+    color: inherit;
+    text-decoration: none;
+    font-size: inherit;
+    font-family: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+}
